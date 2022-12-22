@@ -16,78 +16,77 @@ public class ClienteEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "cliente_id", nullable = false)
-	private Long cliente_id;
+	private Long clienteId;
 	
-    private String primer_nombre;
-    private String segundo_nombre;
-    private String primer_apellido;
-    private String segundo_apellido;
+    private String primerNombre;
+    private String segundoNombre;
+    private String primerApellido;
+    private String segundoApellido;
     private String telefono;
     private String direccion;
-    private String ciudad_de_residencia;
-    private String tipo_documento;
-    private String nombre_documento;
-    private Integer numero_documento;
+    private String ciudadDeResidencia;
+    private String tipoDocumento;
+    private String nombreDocumento;
+    private Long numeroDocumento;
 	/**
-	 * @return the cliente_id
+	 * @return the clienteId
 	 */
-	public Long getCliente_id() {
-		return cliente_id;
+	public Long getClienteId() {
+		return clienteId;
 	}
 	/**
-	 * @param cliente_id the cliente_id to set
+	 * @param clienteId the clienteId to set
 	 */
-	public void setCliente_id(Long cliente_id) {
-		this.cliente_id = cliente_id;
+	public void setClienteId(Long clienteId) {
+		this.clienteId = clienteId;
 	}
 	/**
-	 * @return the primer_nombre
+	 * @return the primerNombre
 	 */
-	public String getPrimer_nombre() {
-		return primer_nombre;
+	public String getPrimerNombre() {
+		return primerNombre;
 	}
 	/**
-	 * @param primer_nombre the primer_nombre to set
+	 * @param primerNombre the primerNombre to set
 	 */
-	public void setPrimer_nombre(String primer_nombre) {
-		this.primer_nombre = primer_nombre;
+	public void setPrimerNombre(String primerNombre) {
+		this.primerNombre = primerNombre;
 	}
 	/**
-	 * @return the segundo_nombre
+	 * @return the segundoNombre
 	 */
-	public String getSegundo_nombre() {
-		return segundo_nombre;
+	public String getSegundoNombre() {
+		return segundoNombre;
 	}
 	/**
-	 * @param segundo_nombre the segundo_nombre to set
+	 * @param segundoNombre the segundoNombre to set
 	 */
-	public void setSegundo_nombre(String segundo_nombre) {
-		this.segundo_nombre = segundo_nombre;
+	public void setSegundoNombre(String segundoNombre) {
+		this.segundoNombre = segundoNombre;
 	}
 	/**
-	 * @return the primer_apellido
+	 * @return the primerApellido
 	 */
-	public String getPrimer_apellido() {
-		return primer_apellido;
+	public String getPrimerApellido() {
+		return primerApellido;
 	}
 	/**
-	 * @param primer_apellido the primer_apellido to set
+	 * @param primerApellido the primerApellido to set
 	 */
-	public void setPrimer_apellido(String primer_apellido) {
-		this.primer_apellido = primer_apellido;
+	public void setPrimerApellido(String primerApellido) {
+		this.primerApellido = primerApellido;
 	}
 	/**
-	 * @return the segundo_apellido
+	 * @return the segundoApellido
 	 */
-	public String getSegundo_apellido() {
-		return segundo_apellido;
+	public String getSegundoApellido() {
+		return segundoApellido;
 	}
 	/**
-	 * @param segundo_apellido the segundo_apellido to set
+	 * @param segundoApellido the segundoApellido to set
 	 */
-	public void setSegundo_apellido(String segundo_apellido) {
-		this.segundo_apellido = segundo_apellido;
+	public void setSegundoApellido(String segundoApellido) {
+		this.segundoApellido = segundoApellido;
 	}
 	/**
 	 * @return the telefono
@@ -114,59 +113,52 @@ public class ClienteEntity {
 		this.direccion = direccion;
 	}
 	/**
-	 * @return the ciudad_de_residencia
+	 * @return the ciudadDeResidencia
 	 */
-	public String getCiudad_de_residencia() {
-		return ciudad_de_residencia;
+	public String getCiudadDeResidencia() {
+		return ciudadDeResidencia;
 	}
 	/**
-	 * @param ciudad_de_residencia the ciudad_de_residencia to set
+	 * @param ciudadDeResidencia the ciudadDeResidencia to set
 	 */
-	public void setCiudad_de_residencia(String ciudad_de_residencia) {
-		this.ciudad_de_residencia = ciudad_de_residencia;
+	public void setCiudadDeResidencia(String ciudadDeResidencia) {
+		this.ciudadDeResidencia = ciudadDeResidencia;
 	}
 	/**
-	 * @return the tipo_documento
+	 * @return the tipoDocumento
 	 */
-	public String getTipo_documento() {
-		return tipo_documento;
+	public String getTipoDocumento() {
+		return tipoDocumento;
 	}
 	/**
-	 * @param tipo_documento the tipo_documento to set
+	 * @param tipoDocumento the tipoDocumento to set
 	 */
-	public void setTipo_documento(String tipo_documento) {
-		this.tipo_documento = tipo_documento;
+	public void setTipoDocumento(String tipoDocumento) {
+		this.tipoDocumento = tipoDocumento;
 	}
 	/**
-	 * @return the nombre_documento
+	 * @return the nombreDocumento
 	 */
-	public String getNombre_documento() {
-		return nombre_documento;
+	public String getNombreDocumento() {
+		return nombreDocumento;
 	}
 	/**
-	 * @param nombre_documento the nombre_documento to set
+	 * @param nombreDocumento the nombreDocumento to set
 	 */
-	public void setNombre_documento(String nombre_documento) {
-		this.nombre_documento = nombre_documento;
+	public void setNombreDocumento(String nombreDocumento) {
+		this.nombreDocumento = nombreDocumento;
 	}
 	/**
-	 * @return the numero_documento
+	 * @return the numeroDocumento
 	 */
-	public Integer getNumero_documento() {
-		return numero_documento;
+	public Long getNumeroDocumento() {
+		return numeroDocumento;
 	}
 	/**
-	 * @param numero_documento the numero_documento to set
+	 * @param numeroDocumento the numeroDocumento to set
 	 */
-	public void setNumero_documento(Integer numero_documento) {
-		this.numero_documento = numero_documento;
+	public void setNumeroDocumento(Long numeroDocumento) {
+		this.numeroDocumento = numeroDocumento;
 	}
-    
-    
 	
-    
-    
-    
-    
-
 }

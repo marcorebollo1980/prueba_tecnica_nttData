@@ -1,0 +1,78 @@
+<p>Listado de clientes</p>
+
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search by title"
+        [(ngModel)]="numeroDocumento"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          (click)="searchTitle()"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+
+<div>
+    <div class="card mt-1" *ngFor="let cliente of clientes">
+        <p>Primer nombre</p>
+        <a class="card-body flex">
+            <span class="text-capitalize font-weight-bold">{{cliente.primerNombre}}</span>
+        </a>
+
+        <p>Segundo nombre</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.segundoNombre}}</span>
+        </a>
+
+        <p>Primer apellido</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.primerApellido}}</span>
+        </a>
+
+        <p>Segundo apellido</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.segundoApellido}}</span>
+        </a>
+
+        <p>Telefono</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.telefono}}</span>
+        </a>
+
+        <p>Direccion</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.direccion}}</span>
+        </a>
+
+        <p>Ciudad de residencia</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.ciudadDeResidencia}}</span>
+        </a>
+
+        <p>Tipo de documento</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.tipoDocumento}}</span>
+        </a>
+
+        <p>Nombre del documento</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.nombreDocumento}}</span>
+        </a>
+
+        <p>Numero de documento</p>
+        <a  class="card-body flex">
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{cliente.numeroDocumento}}</span>
+        </a>
+
+        <div class="card-footer">
+            <!--<button class="btn btn-danger" (click)="deleteExpense(expense.id)" style="width: 10%;">Delete</button>-->
+        </div>
+    </div>
